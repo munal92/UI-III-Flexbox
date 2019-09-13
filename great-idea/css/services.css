@@ -63,6 +63,8 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 /* Your code starts here! */
 
 *{
@@ -70,13 +72,13 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.container{
+/*.container{
    margin: 0 auto;
   width: 1000px;
-}
+} */
 body {
-    width: 80%;
-    margin: auto;
+   width: 800px;
+     margin: 0 auto;
 }
 
 .nav_bar {
@@ -84,96 +86,96 @@ body {
 	margin: 1%;
     padding: 1%;
 	width: 100%;
-	text-align: center;
 	
+ display:flex;
+  flex-direction:row;
+  flex-wrap : wrap;
+    allign-content:space-between;
+ 
+   align-items:center;
+ 
+   
+justify-content: space-between;
+  
 }
 .nav_bar a {
-   
-	
-  padding-right:4%;
+   width:70px;
+	text-allign: center;
+ padding-right:40px;
 	color: darkgrey;
+ text-decoration: none;
+  
+}
+
+.logo{
+   	
+     
+  
+}
+.header_image1{
+   margin:20px;
+ width: 98%;
  
 }
-a {
-text-decoration: none;
+.services_text{
+   margin:20px;
+  width: 100%;
 }
 
-.content_1 {
-   
-    
-    margin: 1%;
-    width: 100%;
+
+.middle_text {
+ display:flex;
+  flex-direction:row;
+  flex-wrap : wrap;
+  
+ 
+}
+.middle_text > div {
+flex-wrap : wrap;
+  width: 360px;
+  margin:20px;
+  border: 1px solid black;
+  background: #F4F3F4;
+  padding :15px;
+  }
+
+.last-section{
+  display:flex;
+  flex-direction:row;
+ 
 }
 
-.content_1_textandBtn {
-	margin: 1%;
-	display: inline-block;
-	text-align: center;
-	font-size: 70px;
-	
-	
-    width: 47%;
-    min-width: 150px;
-}
-.content_1_Picture{
-	margin: 1%;
-  width: 48%;
-	display: inline-block;
-   min-width: 150px;
+.last-section > div {
+  flex-wrap : wrap;
+  margin:20px;
+  width: 100%;
+ 
   
 }
 
-.middleP1 {
-   
-    
-   width: 100%;
-	vertical-align: middle;
-	text-align: left;
-}
-
-.middleP1a {
-    
-   display: inline-block;
-	width: 47%;
-	margin-bottom: 25px;
-	margin-top: 20px;
-}
-
-
-.middle-img {
-  text-align: center;
-	width: 95%;
+.services-info-img{
   
-  
+  height:325px; 
+ width: 100%;
 }
-
-.middleP2 {
-   width: 100%;
-vertical-align: middle;
-text-align: left;
+.list {
+   margin:20px;
+  width: 100%;
 }
-
-.middleP2a {
-    
-display: inline-block;
-	width: 32%;
-	margin-bottom: 25px;
-  margin-top: 20px;
-}
-
 
 .copyright{
   padding: 20px 0;
   text-align:center;
 }
 
-.btn{
+button{
   border: 2px solid black;
-  background-color: inherit;
-  padding: 14px 50px;
-  font-size: 20px;
+  background-color: white;
+  padding: 7px 30px;
+  font-size: 13px;
   cursor: pointer;
-  display: inline-block;
+  
+  margin-top : 15px ; 
 }
 
 hr{
